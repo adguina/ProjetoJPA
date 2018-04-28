@@ -19,7 +19,7 @@ public class PrincipalExcluirPais {
         EntityManager em = emf.createEntityManager();
         Pais p = em.find(Pais.class,2);//Busca o objeto 2 na classe Pais
         em.getTransaction().begin();//inicia a transação
-        em.remove(p);//Ecluir
+        em.remove(p);//Excluir
         em.getTransaction().commit();//executa a transação
         em.close();
         emf.close();   
